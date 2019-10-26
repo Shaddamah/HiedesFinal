@@ -1,0 +1,408 @@
+/* FONT IMPORT */
+@font-face {
+  font-family: 'Gilroy L';
+  src: url('../fonts/Gilroy-Light.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+
+}
+@font-face {
+  font-family: 'Gilroy M';
+  src: url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+@font-face {
+  font-family: 'Gilroy R';
+  src: url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+@font-face {
+  font-family: 'Gilroy H';
+  src: url('../fonts/Gilroy-Heavy.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  }
+  
+@font-face {
+  font-family: 'Gilroy B';
+  src: url('../fonts/Gilroy-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular.woff2') format('woff2'),
+         url('../fonts/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Product Sans';
+    src: url('../fonts/product_sans_regular.woff2') format('woff2'),
+         url('../fonts/product_sans_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GANTI SCROLL */
+::-webkit-scrollbar {
+  width: 10px;
+  background:rgb(18, 27, 43);
+}
+::-webkit-scrollbar-thumb {
+  background: #009EEB;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  height: 24px;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box
+}
+  html{
+    scroll-behavior: smooth;
+    margin:0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: 100%;
+  }
+  body {
+    font-family: 'Gilroy L';
+    font-weight: 600;
+    font-size: 16px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    height: 100%;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Gilroy H';
+  }
+  h1{
+    font-size: 36px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  section {
+    display: block;
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+  }
+  .font-head{
+    font-family: 'Gilroy B' !important;
+  }
+  .centersolute{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  }
+  a, a:hover, a:active{
+    text-decoration: none;
+    color:black;
+  }
+  .white{
+    color:white !important;
+  }
+  .content{
+    font-size: 17px;
+    display:block;
+    margin-top: 300px;
+    margin-left: 50rem;
+    width:350px;
+  }
+  .content2{
+    z-index:2;
+    color:white;
+    position: absolute;
+    font-size: 17px;
+    display:block;
+    margin-top: 100px;
+    width:300px;
+    margin-left: 90rem;
+  }
+  .nextbutton, .backbutton{
+    position: absolute;
+    background-color: #009EEB;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    bottom:32%;
+    margin-left: 70rem;
+  }
+  .nextbutton:hover, .backbutton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+  }
+  .nextbutton i, .backbutton i{
+    margin: 14px 0px 0px 16px;
+    font-size: 20px;
+    color: white;
+  }
+  .backbutton{
+    margin-left: 103rem;
+  }
+  .content-slider{
+    margin-top: 200px;
+  }
+  .button.dot{
+    margin-top: 180px;
+  }
+  .dot a {
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    height: 36px;
+    width: 36px;
+    margin: 0 4px;
+    color: rgb(66, 91, 202);
+    border-color: rgb(66, 91, 202);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+  }
+  .dot a i{
+    margin-top: 3px;
+  }
+  .dot a:hover{
+    transition: 0.4 ease;
+    background-color: rgb(66, 91, 202);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+    color: #fff;
+  }
+  .navbar{
+    float:left
+  }
+  .navbar.right{
+    float: right;
+  }
+  .header{
+    position: absolute;
+    z-index: 2;
+    overflow: auto;
+    margin-top: 50px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0 0 0.15px 0;
+    border-color: white;
+    border-style: outset;
+  }
+  .header .navbar.right{
+    margin: 16px 0;
+  }
+  .header .navbar{
+    margin: 8px 0;
+  }
+  .nav{margin: 0 8px;}
+  .nav:last-child{margin-right:0;}
+
+  .nav i{
+    transition: 0.3s ease;
+    display: inline-block;
+    color:rgba(255, 255, 255, 0);
+    padding-right:0px;
+  }
+  .nav:hover i{
+    transition: 0.3s ease;
+    color:rgb(255, 255, 255);
+    padding-right: 8px;
+  }
+  .navbar .title{
+    margin-left: 4px;
+    display: inline-block;
+    font-size: 24px;
+  }
+  #landing{
+    background: #0B336D;
+    background: linear-gradient(0deg, #0B336D 0%, #000023 100%);
+    overflow: hidden;
+  }
+
+  .logo{
+    display: inline-block;
+    margin-bottom: -4px;
+    width:28px;
+    height:28px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: white;
+}
+.title2, .sub, .line, .line2{
+  z-index:5;
+}
+.title2{
+  display: block;
+  font-size: 52px;
+  position:absolute;
+  margin-top: 250px;
+  left:15%;
+}
+.title2 p{
+  font-family: 'Gilroy B';
+  margin:0;
+}
+.sub{
+  font-family: 'Gilroy R';
+  color:#009EEB;
+  display: block;
+  margin: 0px !important;
+  font-size: 52px;
+  position:absolute;
+  margin-top: 405px !important;
+  left:15%;
+  font-size: 24px;
+}
+.line, .line2{
+  display: block;
+  position: absolute;
+  margin: 0px !important;
+  margin-top: 460px !important;
+  left:15%;
+  background-color: #009EEB;
+}
+.line{
+  width:60px;
+  height:2px;
+}
+.line2{
+  margin-top: 470px !important;
+  width:30px;
+  height:2px;
+}
+.title3{
+  display: block;
+  font-size: 36px;
+  padding-top: 100px;
+  margin-left:15%;
+}
+.title3 p{
+  font-family: 'Gilroy L';
+  margin:0;
+}
+.head{
+  width: 440px;
+  position: absolute;
+  bottom:0;
+  left: 27%;
+  filter: initial(100%);
+}
+.head2{
+  margin-bottom: -10px;
+  width: 600px;
+  position: absolute;
+  bottom:0;
+  margin-left: 120rem;
+}
+.fluid{
+  position: absolute;
+  width: 800px;
+  top:0;
+  margin-left: 70rem;
+}
+.vector{
+  z-index:1;
+  position: absolute;
+  width: 300px;
+  top:22%;
+  margin-left: 77rem; 
+}
+.cable{
+  z-index:-1;
+  position: absolute;
+  width: 650px;
+  top:21%;
+  margin-left: 43rem;
+}
+.cable2{
+  z-index:-1;
+  position: absolute;
+  width: 500px;
+  top:21%;
+  margin-left: 110rem;
+}
+#scene{
+  position:absolute;
+  width: 100%;
+  mix-blend-mode: color-dodge !important;
+}
+.particle{
+  margin-top: 40px;
+  width: 120%;
+  margin-left:-15rem;
+}
+.brain{
+  position:absolute;
+  margin-left: 50rem;
+  margin-top: 220px;
+  width: 350px;
+}
+#content1{
+  top:0;
+  overflow-y: initial;
+  overflow-x: unset;
+  background-color: black;
+}
+#content2{
+  background-color: black;
+}
+.content-border{
+  z-index: -1;
+  position: absolute;
+  margin-top: 200px;
+  width: 100%;
+}
+.text{
+  padding-top: 280px;
+  display:block;
+  margin-left: 13%;
+  width:400px;
+  }
+.text div{
+  
+}
+  .el, .el2,.el3{
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: rgb(17, 0, 255);
+  }
+
+  .glow{
+    position: absolute;
+    margin-left: -25px;
+    margin-top:98.5px;
+    width: 10;
+    height: 10;
+    opacity: 0;
+    border-top: 10px solid transparent;
+    border-right: 40px solid rgb(166, 228, 255);
+    border-bottom: 10px solid transparent;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    
+  }
